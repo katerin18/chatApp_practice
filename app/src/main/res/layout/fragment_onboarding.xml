@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingFragment"
+    android:background="@drawable/back_first"
+    >
+
+    <TextView
+        android:id="@+id/hello"
+        android:width="410dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montaga"
+        android:gravity="center"
+        android:text="@string/logo2"
+        android:layout_marginTop="300dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="105dp"
+        android:layout_marginTop="400dp"
+        android:text="Log in"
+        android:textColor="@color/but_text"
+        android:background="@color/but_color"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_acc"
+        android:fontFamily="@font/montaga"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registr"
+        android:fontFamily="@font/montaga"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="60dp"
+        />
+
+
+
+</FrameLayout>

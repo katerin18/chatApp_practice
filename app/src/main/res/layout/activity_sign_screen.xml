@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_first">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/montaga"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/color_Hint"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/user_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Password"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/color_Hint"
+        />
+
+    <Button
+        android:id="@+id/button_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_pass"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edit_button"
+        android:text="Sign in" />
+
+
+</RelativeLayout>
