@@ -9,10 +9,10 @@
         android:id="@+id/logo"
         android:layout_width="245dp"
         android:layout_height="62dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="130dp"
         android:fontFamily="@font/montaga"
-        android:text="Sign in"
+        android:text="Sign up"
         android:textColor="@color/white"
         android:textSize="34sp" />
 
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginHorizontal="70dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="57dp"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email"
@@ -33,30 +33,81 @@
 
 
     <EditText
-        android:id="@+id/user_pass"
+        android:id="@+id/user_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginHorizontal="70dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/color_Hint"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user_pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="112dp"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Password"
-        android:textStyle="bold"
         android:inputType="textPassword"
         android:textAlignment="inherit"
         android:textColorHint="@color/color_Hint"
-        />
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user_pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="175dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textAlignment="inherit"
+        android:textColorHint="@color/color_Hint"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_registration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_pass"
+        android:layout_below="@id/user_pass1"
         android:layout_marginHorizontal="110dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="115dp"
         android:background="@drawable/edit_button"
-        android:text="Sign in" />
+        android:text="Sign up" />
+
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="293dp"
+        android:layout_marginTop="425dp"
+        android:text="Cancel"
+        android:textColor="@color/color_Hint"
+        android:textSize="15dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/im_cancel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="273dp"
+        android:layout_marginTop="425dp"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
 
 
 </RelativeLayout>
