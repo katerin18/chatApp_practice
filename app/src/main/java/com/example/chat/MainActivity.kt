@@ -190,6 +190,7 @@ class MainActivity : AppCompatActivity() {
 //                }
 //            }
             signInGoogle()
+
         }
     }
 //            var signInRequest = BeginSignInRequest.builder()
@@ -299,6 +300,7 @@ class MainActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email_log, pass_log)
                 .addOnCompleteListener(this) { task ->
                     Toast.makeText(this, "OK", Toast.LENGTH_LONG).show()
+
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "signInWithEmail:success")
