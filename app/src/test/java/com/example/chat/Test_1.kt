@@ -1,4 +1,5 @@
 package com.example.chat
+import com.example.chat.activity.MainActivity
 import org.junit.Test
 
 import org.junit.Assert.*

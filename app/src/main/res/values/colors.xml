@@ -10,4 +10,6 @@
     <color name="color_Hint">#ccc</color>
     <color name="but_color">#d0d2ba</color>
     <color name="but_text">#253334</color>
+    <color name="nav_color">#495455</color>
+    <color name="title_color">#a8adae</color>
 </resources>

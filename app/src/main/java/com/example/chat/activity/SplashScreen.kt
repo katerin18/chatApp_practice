@@ -1,12 +1,10 @@
-package com.example.chat
+package com.example.chat.activity
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.chat.R
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 @SuppressLint("CustomSplashScreen")

@@ -26,7 +26,7 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textAlignment="inherit"
         android:textColorHint="@color/color_Hint"
         android:textStyle="bold" />
@@ -42,7 +42,7 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Name"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="inherit"
         android:textColorHint="@color/color_Hint"
         android:textStyle="bold" />
@@ -79,11 +79,11 @@
 
     <Button
         android:id="@+id/button_registration"
-        android:layout_width="match_parent"
+        android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_pass1"
-        android:layout_marginHorizontal="110dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="110dp"
         android:background="@drawable/edit_button"
         android:text="Sign up" />
 

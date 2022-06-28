@@ -1,8 +1,8 @@
-package com.example.chat
+package com.example.chat.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.example.chat.R
 
 class ProfileScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

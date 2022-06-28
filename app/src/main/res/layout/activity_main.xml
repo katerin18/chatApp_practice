@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activity.MainActivity"
     android:background="@drawable/back_first"
     >
 
@@ -40,6 +40,7 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email"
+        android:maxLines="1"
         android:textAlignment="inherit"
         android:textColorHint="@color/color_Hint"
         android:textStyle="bold" />
@@ -54,6 +55,7 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Password"
+        android:maxLines="1"
         android:inputType="textPassword"
         android:textAlignment="inherit"
         android:textColorHint="@color/color_Hint"
@@ -65,7 +67,7 @@
         android:layout_height="45dp"
         android:layout_marginHorizontal="150dp"
         android:layout_marginTop="420dp"
-        android:text="Sign in"
+        android:text="Login"
         android:textColor="@color/but_text"
         android:background="@drawable/edit_button"
         />
@@ -79,13 +81,5 @@
         android:background="@drawable/edit_button"
         android:text="Sign up"
         android:textColor="@color/but_text" />
-
-    <ImageView
-        android:id="@+id/im_google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/goog"
-        android:layout_marginTop="380dp"
-        android:layout_marginHorizontal="95dp"/>
 
 </FrameLayout>

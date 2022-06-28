@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.chat">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -9,15 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chat">
-
         <activity
-            android:name=".ProfileScreen"
+            android:name=".activity.Navigation"
             android:exported="false" />
         <activity
-            android:name=".SignScreen"
+            android:name=".activity.ProfileScreen"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activity.SignScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashScreen"
             android:exported="true"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>
@@ -27,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true" />
 
         <meta-data

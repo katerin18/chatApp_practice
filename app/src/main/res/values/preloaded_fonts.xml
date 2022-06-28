@@ -3,6 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
         <item>@font/b612_mono</item>
+        <item>@font/kameron</item>
         <item>@font/montaga</item>
         <item>@font/montserrat</item>
     </array>

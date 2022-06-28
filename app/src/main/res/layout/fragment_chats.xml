@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/but_text"
+    tools:context=".fragments.ChatsFragment">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/chats"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="310dp"-->
+<!--        android:layout_marginHorizontal="55dp"-->
+<!--        android:fontFamily="@font/kameron"-->
+<!--        android:text="@string/empty_chats" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="533dp"
+        android:layout_height="376dp"
+        android:layout_marginLeft="-120dp"
+        android:layout_marginTop="120dp"
+        android:rotation="270"
+        android:scaleY="-1"
+        android:src="@drawable/lisiss"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:layout_height="53dp"
+        android:src="@drawable/title_frame"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_profile"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kameron"
+        android:text="Chats"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"/>
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPersonName"-->
+<!--        android:layout_width="342dp"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:layout_marginLeft="35dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:background="@drawable/edit_button"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:layout_marginLeft="335dp"-->
+<!--        android:src="@drawable/ic_baseline_search_24" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/add_chat"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="570dp"-->
+<!--        android:layout_marginLeft="320dp"-->
+<!--        android:src="@drawable/ic_baseline_maps_ugc_24" />-->
+
+</FrameLayout>

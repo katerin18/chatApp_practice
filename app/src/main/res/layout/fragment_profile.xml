@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/but_text"
+    tools:context=".fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="570dp"
+        android:background="@drawable/edit_button"
+        android:text="Exit" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:src="@drawable/title_frame" />
+
+    <TextView
+        android:id="@+id/txt_profile"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="180dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kameron"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_marginTop="230dp">
+
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="255dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/white"
+            android:maxLines="1"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/profile_login"
+            android:layout_width="255dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="@color/white"
+            android:maxLines="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white" />
+        <EditText
+            android:id="@+id/profile_pass"
+            android:layout_width="255dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="30dp"
+            android:maxLines="1"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kameron"
+            android:text="Name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/title_color" />
+        <TextView
+            android:id="@+id/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kameron"
+            android:text="Email"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="@color/title_color" />
+        <TextView
+            android:id="@+id/title_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kameron"
+            android:text="Password"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="@color/title_color" />
+
+        <ImageView
+            android:id="@+id/edit_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="57dp"
+            android:src="@drawable/ic_pen" />
+        <ImageView
+            android:id="@+id/edit_login"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="137dp"
+            android:src="@drawable/ic_pen" />
+        <ImageView
+            android:id="@+id/edit_pass"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="217dp"
+            android:src="@drawable/ic_pen" />
+
+
+    </FrameLayout>
+
+</FrameLayout>
