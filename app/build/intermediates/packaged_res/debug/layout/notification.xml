@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/notif_Image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/notif_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/notif_Image"
+            android:fontFamily="@font/kameron"
+            android:textColor="@color/rightSide"
+            android:text="Chat"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notif_SendNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notif_Image"
+            android:text="Zara"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/notif_Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forNotif"
+            android:layout_below="@id/notif_SendNick"
+            android:maxLines="2"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

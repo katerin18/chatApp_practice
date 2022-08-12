@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">chat</string>
 
-    <string name="logo2">Sign in</string>
+    <string name="logo2">Log in</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_navigation">Navigation</string>
@@ -9,4 +9,15 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="empty_chats">Your dialogs will be displayed here soon</string>
+    <string name="uploadIm">Upload your image!</string>
+    <string name="ch_im">CHOOSE IMAGE</string>
+    <string name="up_im">UPLOAD IMAGE</string>
+    <string name="WelcomeToChat">Welcome to dialog with Anonymous!</string>
+    <string name="welcomeUser"></string>
+    <string name="chatNick">nickname</string>
+    <string name="hintMess">Put your message</string>
+
+    <string name="something">Here will be text</string>
+    <string name="forNotif">Нищий и болезненно гордый студент Родион Романович Раскольников решает проверить, способен ли он на поступок, возвышающий его над «обычными» людьми.</string>
+
 </resources>

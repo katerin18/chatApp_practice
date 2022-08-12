@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.chat">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,6 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chat">
+        <activity
+            android:name=".adapter.showChat"
+            android:exported="false" />
+        <activity
+            android:name=".activity.searchUsersDialog"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.ImageProfile"
+            android:exported="false" />
         <activity
             android:name=".activity.Navigation"
             android:exported="false" />
@@ -30,6 +40,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
+
+        <service
+            android:name="MyFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".activity.MainActivity"
             android:exported="true" />

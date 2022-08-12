@@ -1,33 +1,57 @@
 package com.example.chat.fragments
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.example.chat.R
+import com.example.chat.activity.MainActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.*
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.fragment_profile.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [ProfileFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ProfileFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private lateinit var nickname: EditText
+    private lateinit var mail: EditText
+ //   private lateinit var usId: EditText
+
+    private lateinit var txt_nickname: String
+    private lateinit var txt_mail: String
+  //  private lateinit var txt_id: String
+
+    private lateinit var firebaseUser: FirebaseUser
+    private lateinit var databaseReference: DatabaseReference
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
+        firebaseUser = FirebaseAuth.getInstance().currentUser!!
+        databaseReference = FirebaseDatabase.getInstance().getReference().child(firebaseUser.uid)
+
+
+//        databaseReference.addValueEventListener(object : ValueEventListener{
+//            override fun onCancelled(error: DatabaseError){
+//                Toast.makeText(context, error.message, Toast.LENGTH_SHORT).show()
+//
+//            }
+////            override fun onDataChange(snapshot: DataSnapshot){
+////                var user = snapshot.getValue(User::class.java)
+////                profile_name.text = user!!.userName
+////
+////            }
+//        })
+
     }
 
     override fun onCreateView(
@@ -35,26 +59,60 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
+
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ProfileFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ProfileFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        nickname = view.findViewById(R.id.profile_name)
+        mail = view.findViewById(R.id.profile_login)
+      //  usId = view.findViewById(R.id.profile_id)
+
+        auth = FirebaseAuth.getInstance()
+        firebaseUser = auth.currentUser!!
+
+        showUser(firebaseUser)
+
+        // upload the profile image
+        val prof_image: ImageView = view.findViewById(R.id.user_im)
+        prof_image.setOnClickListener {
+            startActivity(Intent(activity, ImageProfile::class.java))
+        }
+
+        // Sign out of user
+        val btn_exit : Button = view.findViewById(R.id.button_exit)
+        btn_exit.setOnClickListener {
+
+            Firebase.auth.signOut()
+
+            Toast.makeText(activity, "You have logged out of your profile", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(activity, MainActivity::class.java))
+        }
+    }
+
+    fun showUser(firebaseUser: FirebaseUser){
+        val userID : String = firebaseUser.uid
+
+        val referenceProfile: DatabaseReference = FirebaseDatabase.getInstance().getReference("Users")
+        referenceProfile.child(userID).addListenerForSingleValueEvent(object: ValueEventListener{
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                txt_nickname = snapshot.child("userName").value.toString()
+                println("SNAPSHOT  ${snapshot.toString()}")
+                txt_mail = firebaseUser.email!!
+               // txt_id = firebaseUser.uid
+
+                nickname.setText(txt_nickname)
+                mail.setText(txt_mail)
+                //usId.setText(txt_id)
             }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(activity, "Something wnt wrong!", Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 }

@@ -2,7 +2,11 @@ package com.example.chat.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.util.Log
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.chat.R
@@ -23,14 +27,30 @@ class SignScreen : AppCompatActivity() {
         setContentView(R.layout.activity_sign_screen)
         auth = FirebaseAuth.getInstance()
 
+        // hide / show password
+        var edit_pass : EditText = findViewById(R.id.user_pass1)
+
+        var imgShowHide: ImageView = findViewById(R.id.show_psw)
+        imgShowHide.setImageResource(R.drawable.visiblel)
+        imgShowHide.setOnClickListener {
+            if(edit_pass.transformationMethod.equals(HideReturnsTransformationMethod.getInstance())){
+                edit_pass.transformationMethod = PasswordTransformationMethod.getInstance()
+                imgShowHide.setImageResource(R.drawable.visiblel)
+            }
+            else{
+                edit_pass.transformationMethod = HideReturnsTransformationMethod.getInstance()
+                imgShowHide.setImageResource(R.drawable.invisible)
+            }
+        }
+
         // наконец, корректная регистрация по логину и паролю
         button_registration.setOnClickListener{
-            val name = user_name.text.toString()
+            val nick_name = user_name.text.toString()
             val login = user_login.text.toString()
             val pass = user_pass1.text.toString()
             val pass_c = user_pass2.text.toString()
 
-            if (name.isEmpty()) {
+            if (nick_name.isEmpty()) {
                 user_name.error = "Input your name"
             }
             if (login.isEmpty()) {
@@ -48,13 +68,13 @@ class SignScreen : AppCompatActivity() {
             if (login.isNotEmpty() &&
                 pass.isNotEmpty() &&
                 pass_c.trim().isNotEmpty() &&
-                name.isNotEmpty()
-            ) {
+                nick_name.isNotEmpty())
+            {
                 if(!android.util.Patterns.EMAIL_ADDRESS.matcher(login).matches()){
                     user_login.error = "Input valid email"
                 }
                 else{
-                    registerUser(name, login, pass)
+                    registerUser(nick_name, login, pass)
                 }
             }
         }
@@ -71,21 +91,26 @@ class SignScreen : AppCompatActivity() {
             .addOnCompleteListener(this){
                 if(it.isSuccessful){
                     val useR:FirebaseUser? = auth.currentUser
+
                     val userId: String = useR!!.uid
                     Log.w("Sign", "Registration was success")
 
                     databaseReference = FirebaseDatabase.getInstance().getReference("Users").child(userId)
                     val hashMap:HashMap<String, String> = HashMap()
+
                     hashMap.put("userId", userId)
                     hashMap.put("userName", userName)
+
                     hashMap.put("userImage", "")
 
                     databaseReference.setValue(hashMap).addOnCompleteListener(this){
                         if(it.isSuccessful){
+
                             user_name.setText("")
                             user_login.setText("")
                             user_pass1.setText("")
                             user_pass2.setText("")
+
                             Log.w("Sign", "Registration was successfully")
                             Toast.makeText(this, "Registration was successfully", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this, MainActivity::class.java))
@@ -95,80 +120,6 @@ class SignScreen : AppCompatActivity() {
             }
     }
 
-//    fun something(){
-//       // button_registration.setOnClickListener {
-//            val name = findViewById<EditText>(R.id.user_name)
-//            val login = findViewById<EditText>(R.id.user_login)
-//            val pass = findViewById<EditText>(R.id.user_pass1)
-//            val pass_c = findViewById<EditText>(R.id.user_pass2)
-//
-//            if (name.text.isEmpty()) {
-//                user_name.error = "Input your name"
-//            }
-//            if (login.text.isEmpty()) {
-//                user_login.error = "Input your email"
-//            }
-//            if (pass.text.isEmpty()) {
-//                user_pass1.error = "Input your password"
-//            }
-//            if (pass_c.text.isEmpty()) {
-//                user_pass2.error = "Confirm your password"
-//            }
-//            if (login.text.isNotEmpty() &&
-//                pass.text.isNotEmpty() &&
-//                pass_c.text.trim().isNotEmpty() &&
-//                name.text.isNotEmpty()
-//            ) {
-//
-//                Toast.makeText(this, "OKAY", Toast.LENGTH_SHORT).show()
-//
-//                if (!android.util.Patterns.EMAIL_ADDRESS.matcher(user_login.text.toString())
-//                        .matches()
-//                ) {
-//                    user_login.error = "Input valid email"
-//                } else {
-//                    if (pass.text.toString() == pass_c.text.toString()) {
-//                        auth.createUserWithEmailAndPassword(
-//                            login.toString().trim(),
-//                            pass.toString().trim()
-//                        )
-//                            .addOnCompleteListener(this) { task ->
-//                                if (task.isSuccessful) {
-//                                    val user = auth.currentUser
-//                                    Log.w(
-//                                        ContentValues.TAG,
-//                                        "SIGN UP WAS SUCCESSFULLY",
-//                                        task.exception
-//                                    )
-//                                    //  Log.d(ContentValues.TAG, "signInWithEmail:success")
-//                                    Toast.makeText(
-//                                        this,
-//                                        "Registration was successfully",
-//                                        Toast.LENGTH_SHORT
-//                                    ).show()
-//                                    updateUI(user)
-//                                    startActivity(Intent(this, MainActivity::class.java))
-//
-//                                } else {
-//                                    Toast.makeText(
-//                                        this,
-//                                        "Registration was failed",
-//                                        Toast.LENGTH_SHORT
-//                                    ).show()
-//                                    // Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT).show()
-//                                    Log.w(ContentValues.TAG, "SIGN UP WAS FAILED", task.exception)
-//                                    updateUI(null)
-//                                }
-//                                //startActivity(Intent(this, MainActivity::class.java))
-//                            }
-//                    } else {
-//                        user_pass2.error = "Passwords should be same"
-//                    }
-//                }
-//         //   }
-//        }
-//
-//    }
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.

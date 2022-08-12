@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/but_text"
+    tools:context=".activity.searchUsersDialog">
+
+    <TextView
+        android:id="@+id/txt_searchUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/kameron"
+        android:text="Search users"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="13dp"
+        android:textAlignment="center"
+        android:background="@color/nav_color"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_searchUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_searchUser"
+        android:padding="10dp"
+        tools:listitem="@layout/card_item" />
+
+</RelativeLayout>

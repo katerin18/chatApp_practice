@@ -18,7 +18,7 @@ class Navigation : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
-        replaceFragment(profFrag)
+        replaceFragment(chatFrag)
 
         bottom_navigation.setOnItemReselectedListener { // работает при двойном нажатии
             when(it.itemId){
