@@ -32,10 +32,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/notif_Image"
-            android:text="Zara"
-            android:textStyle="bold"
             android:layout_marginTop="5dp"
-            android:textSize="18sp"/>
+            android:text="Zara"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/notif_Message"

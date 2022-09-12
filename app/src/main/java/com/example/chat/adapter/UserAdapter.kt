@@ -1,6 +1,8 @@
 package com.example.chat.adapter
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,9 +40,25 @@ class UserAdapter(private val context: Context, private val userList: ArrayList<
         holder.userMes.text = user.txtMessage
         holder.receiverName.text = user.receiverName
         holder.receiverId = user.receiverId
+
+        openChat(holder, user.receiverName, user.receiverId, user.senderName)
     }
 
     override fun getItemCount(): Int {
         return userList.size
+    }
+
+    fun openChat(holder: ViewHolder, nickname : String, id: String, sendNick : String){
+        val view = holder.itemView
+
+        view.setOnClickListener {
+            val activity = holder.itemView.context as Activity
+            val i = Intent(activity, showChat::class.java)
+
+            i.putExtra("recNick", nickname)
+            i.putExtra("sendNick", sendNick)
+            i.putExtra("idRec", id)
+            activity.startActivity(i)
+        }
     }
 }

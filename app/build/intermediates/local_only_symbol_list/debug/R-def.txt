@@ -82,7 +82,6 @@ id linn_card
 id log_in
 id logo
 id main_logo
-id notif
 id notif_Image
 id notif_Message
 id notif_SendNick
@@ -101,6 +100,7 @@ id show_psw
 id show_psw_login
 id sign_up
 id splash_logo
+id switch_notif
 id textView
 id textView2
 id text_dashboard
@@ -151,6 +151,8 @@ mipmap ic_launcher_round
 mipmap ic_logo
 string WelcomeToChat
 string app_name
+string bodyMessage
+string breakfast_notification_channel_id
 string ch_im
 string chatNick
 string default_web_client_id
@@ -165,8 +167,13 @@ string google_storage_bucket
 string hello_blank_fragment
 string hintMess
 string logo2
+string message_subscribe_failed
+string message_subscribed
+string notif_channel_id
+string notif_channel_name
 string project_id
 string something
+string titleMessage
 string title_activity_navigation
 string title_dashboard
 string title_home

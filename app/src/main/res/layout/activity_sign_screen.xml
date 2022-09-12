@@ -89,11 +89,12 @@
 
     <Button
         android:id="@+id/button_registration"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/user_pass1"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="110dp"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/user_pass2"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="153dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/edit_button"
         android:text="Sign up" />
 

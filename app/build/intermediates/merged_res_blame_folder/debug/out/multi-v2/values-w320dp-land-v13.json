@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+            "outputFile": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\poche\\.gradle\\caches\\transforms-3\\cb281b9e68e94db441c1c01a1672e054\\transformed\\material-1.6.1\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "/Users/katerina/.gradle/caches/transforms-3/dab957f38a7b531f6279202504b5756b/transformed/material-1.6.1/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

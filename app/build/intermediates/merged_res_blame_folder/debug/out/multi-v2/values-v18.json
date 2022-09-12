@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\poche\\.gradle\\caches\\transforms-3\\cd2c2d8aecf965ec5e822cd79f422f22\\transformed\\appcompat-1.4.2\\res\\values-v18\\values-v18.xml",
+                    "source": "/Users/katerina/.gradle/caches/transforms-3/38dcac118dbc9c9d205364933e2fe038/transformed/appcompat-1.5.0/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

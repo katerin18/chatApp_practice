@@ -45,10 +45,10 @@ class SignScreen : AppCompatActivity() {
 
         // наконец, корректная регистрация по логину и паролю
         button_registration.setOnClickListener{
-            val nick_name = user_name.text.toString()
-            val login = user_login.text.toString()
-            val pass = user_pass1.text.toString()
-            val pass_c = user_pass2.text.toString()
+            val nick_name = user_name.text.toString().trim()
+            val login = user_login.text.toString().trim()
+            val pass = user_pass1.text.toString().trim()
+            val pass_c = user_pass2.text.toString().trim()
 
             if (nick_name.isEmpty()) {
                 user_name.error = "Input your name"

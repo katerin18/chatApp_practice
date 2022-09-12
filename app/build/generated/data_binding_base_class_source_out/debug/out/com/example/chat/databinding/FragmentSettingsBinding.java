@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.chat.R;
@@ -29,7 +29,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final ImageView imageView4;
 
   @NonNull
-  public final Switch notif;
+  public final SwitchCompat switchNotif;
 
   @NonNull
   public final TextView textView2;
@@ -38,12 +38,13 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final FrameLayout topNavigation;
 
   private FragmentSettingsBinding(@NonNull FrameLayout rootView,
-      @NonNull LinearLayout fragNotifications, @NonNull ImageView imageView4, @NonNull Switch notif,
-      @NonNull TextView textView2, @NonNull FrameLayout topNavigation) {
+      @NonNull LinearLayout fragNotifications, @NonNull ImageView imageView4,
+      @NonNull SwitchCompat switchNotif, @NonNull TextView textView2,
+      @NonNull FrameLayout topNavigation) {
     this.rootView = rootView;
     this.fragNotifications = fragNotifications;
     this.imageView4 = imageView4;
-    this.notif = notif;
+    this.switchNotif = switchNotif;
     this.textView2 = textView2;
     this.topNavigation = topNavigation;
   }
@@ -87,9 +88,9 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.notif;
-      Switch notif = ViewBindings.findChildViewById(rootView, id);
-      if (notif == null) {
+      id = R.id.switch_notif;
+      SwitchCompat switchNotif = ViewBindings.findChildViewById(rootView, id);
+      if (switchNotif == null) {
         break missingId;
       }
 
@@ -106,7 +107,7 @@ public final class FragmentSettingsBinding implements ViewBinding {
       }
 
       return new FragmentSettingsBinding((FrameLayout) rootView, fragNotifications, imageView4,
-          notif, textView2, topNavigation);
+          switchNotif, textView2, topNavigation);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

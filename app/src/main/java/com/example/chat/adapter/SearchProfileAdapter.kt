@@ -34,6 +34,8 @@ class SearchProfileAdapter(private val list_ : ArrayList<Profile>) : RecyclerVie
         holder.profIm.setImageResource(R.drawable.im_user)
         holder.profId = currentUser.userId
 
+        println("RECEIVER ID = ${currentUser.userId}")
+
         openChat(holder, currentUser.userName, currentUser.userId, FirebaseAuth.getInstance().currentUser.toString())
     }
 
@@ -41,8 +43,11 @@ class SearchProfileAdapter(private val list_ : ArrayList<Profile>) : RecyclerVie
         return list_.size
     }
 
-    private fun openChat(holder: ProfilesViewHolder, nickname : String, id: String, sendNick : String){
+
+    fun openChat(holder: ProfilesViewHolder, nickname : String, id: String, sendNick : String){
         val view = holder.itemView
+
+        println("CUR USER = ${FirebaseAuth.getInstance().currentUser.toString()}")
 
         view.setOnClickListener {
             val activity = holder.itemView.context as Activity

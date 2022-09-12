@@ -17,6 +17,16 @@
     <string name="chatNick">nickname</string>
     <string name="hintMess">Put your message</string>
 
+    <string name="breakfast_notification_channel_id">Id</string>
+
+    <string name="message_subscribed">Read your message!</string>
+    <string name="message_subscribe_failed">Something went wrong :(</string>
+
+    <string name="titleMessage">Who</string>
+    <string name="bodyMessage">What</string>
+    <string name="notif_channel_id">Channel id</string>
+    <string name="notif_channel_name">Channel name</string>
+
     <string name="something">Here will be text</string>
     <string name="forNotif">Нищий и болезненно гордый студент Родион Романович Раскольников решает проверить, способен ли он на поступок, возвышающий его над «обычными» людьми.</string>
 

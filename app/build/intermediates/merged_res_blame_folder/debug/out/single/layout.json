@@ -1,82 +1,82 @@
 [
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash_screen.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_settings.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile_screen.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_profile_screen.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search_users_dialog.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_search_users_dialog.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_chats.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_chats.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_chat.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_show_chat.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile_screen.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_profile_screen.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_notifications.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_notifications.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_sign_screen.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_sign_screen.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_left_item.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\card_left_item.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_dashboard.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_user.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\item_user.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_right_item.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\card_right_item.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/card_right_item.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/card_right_item.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_item.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\card_item.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_navigation.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_navigation.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_show_chat.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_show_chat.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_dashboard.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search_users_dialog.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_search_users_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_image_profile.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_image_profile.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_image_profile.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_image_profile.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_user.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/item_user.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_screen.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_sign_screen.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/notification.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/notification.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notification.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\notification.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notifications.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/fragment_notifications.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/card_left_item.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/card_left_item.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chats.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_chats.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_navigation.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/activity_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\poche\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "/Users/katerina/Downloads/on_macBook/chat/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/card_item.xml",
+        "source": "/Users/katerina/Downloads/on_macBook/chat/app/src/main/res/layout/card_item.xml"
     }
 ]

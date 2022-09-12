@@ -40,6 +40,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="WelcomeToChat">Welcome to dialog with Anonymous!</string>
     <string name="app_name">chat</string>
+    <string name="bodyMessage">What</string>
+    <string name="breakfast_notification_channel_id">Id</string>
     <string name="ch_im">CHOOSE IMAGE</string>
     <string name="chatNick">nickname</string>
     <string name="default_web_client_id" translatable="false">39311531823-8pvfcc7jsja8rrl9id2vit4l13sn3uap.apps.googleusercontent.com</string>
@@ -54,8 +56,13 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hintMess">Put your message</string>
     <string name="logo2">Log in</string>
+    <string name="message_subscribe_failed">Something went wrong :(</string>
+    <string name="message_subscribed">Read your message!</string>
+    <string name="notif_channel_id">Channel id</string>
+    <string name="notif_channel_name">Channel name</string>
     <string name="project_id" translatable="false">chat-62b5b</string>
     <string name="something">Here will be text</string>
+    <string name="titleMessage">Who</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
@@ -64,29 +71,30 @@
     <string name="uploadIm">Upload your image!</string>
     <string name="welcomeUser"/>
     <style name="SplashScreenTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        
+        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        
+        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        
+        <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
+        <!-- Customize your theme here. -->
     </style>
     <style name="Theme.Chat" parent="Theme.AppCompat.DayNight.NoActionBar">
-        
+        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        
+        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        
+        <item name="android:forceDarkAllowed" ns1:targetApi="q">false</item>
+        <!-- Status bar color. -->
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
+        <!-- Customize your theme here. -->
     </style>
 </resources>
