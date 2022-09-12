@@ -57,7 +57,6 @@ class showChat : AppCompatActivity() {
 
         val notifyIntent = Intent(application, AlarmReceiver::class.java)
 
-
         notifyPendingIntent = PendingIntent.getBroadcast(
             application,
             REQUEST_CODE,
