@@ -78,6 +78,7 @@ class showChat : AppCompatActivity() {
                     // TODO: 4. Get an instance of NotificationManager and call sendNotification
                     val notificationManager = ContextCompat.getSystemService(
                         application,
+
                         NotificationManager::class.java
                     ) as NotificationManager
                     notificationManager.sendNotification(message, senderNick!!, application)
