@@ -76,6 +76,7 @@ class showChat : AppCompatActivity() {
         }
 
 
+
         Log.d("meoww", "Application is $application")
         btnSendMessage.setOnClickListener {
             message = inputMessage.text.toString().trim()
