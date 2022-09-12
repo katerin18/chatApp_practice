@@ -1,15 +1,16 @@
 package com.example.chat.adapter
 
-import android.app.*
+import android.app.AlarmManager
+import android.app.Application
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.CompoundButton
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SwitchCompat
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
+import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_show_chat.*
 
@@ -39,6 +41,8 @@ class showChat : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_chat)
+
+
 
         firebaseUser = FirebaseAuth.getInstance().currentUser
         recListChat.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -63,6 +67,14 @@ class showChat : AppCompatActivity() {
             notifyIntent,
             PendingIntent.FLAG_UPDATE_CURRENT
         )
+
+        FirebaseInstanceId.getInstance().instanceId.addOnSuccessListener(
+            this
+        ) { instanceIdResult ->
+            val token = instanceIdResult.token
+            Log.d("MyFirebaseToken", token)
+        }
+
 
         Log.d("meoww", "Application is $application")
         btnSendMessage.setOnClickListener {
@@ -111,7 +123,6 @@ class showChat : AppCompatActivity() {
         return application
     }
     val a = app()
-
 
 
     fun sendMessage(
